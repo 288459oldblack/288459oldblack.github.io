@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git基本使用 | coderclc的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="coderclc的前端进阶之路">
+    
+    <link rel="preload" href="/assets/css/0.styles.c8500090.css" as="style"><link rel="preload" href="/assets/js/app.8d08d3ad.js" as="script"><link rel="preload" href="/assets/js/2.3c5b5d5b.js" as="script"><link rel="preload" href="/assets/js/21.153d7d59.js" as="script"><link rel="prefetch" href="/assets/js/10.f1ea5ee7.js"><link rel="prefetch" href="/assets/js/11.f3ed46b0.js"><link rel="prefetch" href="/assets/js/12.c40d40d7.js"><link rel="prefetch" href="/assets/js/13.c3afab6d.js"><link rel="prefetch" href="/assets/js/14.2f5b8724.js"><link rel="prefetch" href="/assets/js/15.8414a576.js"><link rel="prefetch" href="/assets/js/16.efa72bec.js"><link rel="prefetch" href="/assets/js/17.6fb669ed.js"><link rel="prefetch" href="/assets/js/18.4fbb305e.js"><link rel="prefetch" href="/assets/js/19.7309d7e6.js"><link rel="prefetch" href="/assets/js/20.fecab73b.js"><link rel="prefetch" href="/assets/js/22.f4dea65c.js"><link rel="prefetch" href="/assets/js/23.8578a271.js"><link rel="prefetch" href="/assets/js/24.8c7ce8b4.js"><link rel="prefetch" href="/assets/js/25.78f90120.js"><link rel="prefetch" href="/assets/js/26.e21fe418.js"><link rel="prefetch" href="/assets/js/27.6bb79c87.js"><link rel="prefetch" href="/assets/js/3.91eade8b.js"><link rel="prefetch" href="/assets/js/4.40019529.js"><link rel="prefetch" href="/assets/js/5.82c76590.js"><link rel="prefetch" href="/assets/js/6.79d03e89.js"><link rel="prefetch" href="/assets/js/7.c3c43f34.js"><link rel="prefetch" href="/assets/js/8.d9861b21.js"><link rel="prefetch" href="/assets/js/9.d297bf1b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c8500090.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="coderclc的博客" class="logo"> <span class="site-name can-hide">coderclc的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/note/html-css.html" class="nav-link">
+  HTML+CSS
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/vue/vuerouter.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/js.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/git.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/webpack.html" class="nav-link">
+  webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目总结" class="dropdown-title"><span class="title">项目总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目总结" class="mobile-dropdown-title"><span class="title">项目总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/project/supermall/question.html" class="nav-link">
+  Vue-supermall
+</a></li><li class="dropdown-item"><!----> <a href="/pages/project/blog/blog1.html" class="nav-link">
+  Vuepress-myblog
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/interview/skill.html" class="nav-link">
+  面试技巧
+</a></li><li class="dropdown-item"><!----> <a href="/pages/interview/question/css.html" class="nav-link">
+  常见面试题
+</a></li><li class="dropdown-item"><!----> <a href="/pages/interview/mj.html" class="nav-link">
+  大佬面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+  优秀文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/288459oldblack" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习笔记" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习笔记" class="mobile-dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/note/html-css.html" class="nav-link">
+  HTML+CSS
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/vue/vuerouter.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/js.html" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/git.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/pages/note/webpack.html" class="nav-link">
+  webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目总结" class="dropdown-title"><span class="title">项目总结</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目总结" class="mobile-dropdown-title"><span class="title">项目总结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/project/supermall/question.html" class="nav-link">
+  Vue-supermall
+</a></li><li class="dropdown-item"><!----> <a href="/pages/project/blog/blog1.html" class="nav-link">
+  Vuepress-myblog
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/interview/skill.html" class="nav-link">
+  面试技巧
+</a></li><li class="dropdown-item"><!----> <a href="/pages/interview/question/css.html" class="nav-link">
+  常见面试题
+</a></li><li class="dropdown-item"><!----> <a href="/pages/interview/mj.html" class="nav-link">
+  大佬面经
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test1.html" class="nav-link">
+  优秀文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/288459oldblack" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="git基本使用"><a href="#git基本使用" class="header-anchor">#</a> Git基本使用</h3> <h4 id="_1-版本控制"><a href="#_1-版本控制" class="header-anchor">#</a> 1. 版本控制</h4> <ul><li>本地版本控制</li> <li>集中版本控制 SVN</li> <li>分布式版本控制 Git</li></ul> <h4 id="_2-基本的linux命令学习"><a href="#_2-基本的linux命令学习" class="header-anchor">#</a> 2.  基本的Linux命令学习</h4> <ul><li>2.1 cd:改变目录(Change directory)</li> <li>2.2 cd..:返回上一层目录</li> <li>2.3 pwd:显示当前所在目录</li> <li>2.4 ls(ll):列出当前目录中的所有文件,只不过ll列出的内容更详细</li> <li>2.5 touch:新建一个文件 如 touch main.js就在当前目录下新建一个main.js文件</li> <li>2.6 mkdir:新建一个文件夹(make )</li> <li>2.7 rm:删除一个文件,rm 文件名就删除对应的文件(remove 移除)</li> <li>2.8 rm -r:删除一个文件夹,rm 文件夹名就删除对应的文件夹(remove 移除)</li> <li>2.9 mv 移动文件(move)  mv index.js test  index.js和test在同一个文件夹下,将index.js移动到test中</li> <li>2.10 reset 重新初始化终端/清屏</li> <li>2.11 clear 清屏</li> <li>2.12 history 查看命令历史</li> <li>2.13 help 帮助</li> <li>2.14 exit 退出</li> <li>2.15 #表示注释</li></ul> <h4 id="_3-git环境配置"><a href="#_3-git环境配置" class="header-anchor">#</a> 3. Git环境配置</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>$git config --global --list #查看用户列表
+
+$git config --system --list #查看系统配置列表
+
+$git config --global user.name &quot;oldblack&quot;            #用户名
+
+$git config --global user.email &quot;1195852208@qq.com&quot;  #邮箱
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="_4-git基本理论和基本使用"><a href="#_4-git基本理论和基本使用" class="header-anchor">#</a> 4. Git基本理论和基本使用</h4> <ul><li><p>Workspace：Working Directory：工作区，就是你平时存放项目代码的地方</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$git add [files] /git add .  #将工作区代码放到暂存区
+
+$git checkout      	        #将暂存区代码放到工作区
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>index（Stage）：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$git commit -m                #将暂存区代码提交到本地仓库
+
+$git reset                    #将本地仓库代码拉到暂存区
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>Repository：本地仓库，就是安全存放数据的位置，这里面有你提交的所有版本的数据。其中HEAD指向最新放入仓库的版本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$git push                     #将本地仓库代码提交到远程服务器
+
+$git pull&lt;---                 #将远程服务器代码拉到本地仓库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>Remote：远程仓库，托管代码的服务器（GIthub，Gitee）</p></li></ul> <h4 id="_5-git项目的创建和克隆"><a href="#_5-git项目的创建和克隆" class="header-anchor">#</a> 5. Git项目的创建和克隆</h4> <ul><li>5.1 在当前目录新建一个Git代码库
+<ul><li>git init</li></ul></li> <li>5.2 克隆一个项目和它的整个代码历史，可以去Github或者Gitee上克隆一个
+<ul><li>git clone url</li></ul></li></ul> <h4 id="_6-git文件操作"><a href="#_6-git文件操作" class="header-anchor">#</a> 6. Git文件操作</h4> <ul><li>git add. 将文件添加到暂存区</li> <li>git commit -m  将暂存区的文件提交到本地仓库  -m（message）描述信息</li> <li>git push 将本地文件提交到服务器上面</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code>忽略文件
+有时候不想把某些文件纳入版本控制里面<span class="token punctuation">,</span>比如数据库文件、临时文件、设计文件等
+在主目录下建立“<span class="token punctuation">.</span>gitignore”文件，文件有如下规则：
+<span class="token operator">*</span><span class="token punctuation">.</span>txt            #忽略所有<span class="token punctuation">.</span>txt结尾的文件
+！lib<span class="token punctuation">.</span>txt  	    #但是lib<span class="token punctuation">.</span>
+<span class="token operator">/</span>temp            #仅忽略项目根目录下的<span class="token constant">TODO</span>文件，不包括其它目录temp
+bulid<span class="token operator">/</span>           #忽略build<span class="token operator">/</span>目录下的所有文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="_7-git分支"><a href="#_7-git分支" class="header-anchor">#</a> 7. Git分支</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code># 列出所有本地分支
+$ git branch
+
+# 列出所有远程分支
+$ git branch -r
+
+# 列出所有本地分支和远程分支
+$ git branch -a
+
+# 新建一个分支，但依然停留在当前分支
+$ git branch [branch-name]
+
+# 新建一个分支，并切换到该分支
+$ git checkout -b [branch]
+
+# 新建一个分支，指向指定commit
+$ git branch [branch] [commit]
+
+# 新建一个分支，与指定的远程分支建立追踪关系
+$ git branch --track [branch] [remote-branch]
+
+# 切换到指定分支，并更新工作区
+$ git checkout [branch-name]
+
+# 切换到上一个分支
+$ git checkout -
+
+# 建立追踪关系，在现有分支与指定的远程分支之间
+$ git branch --set-upstream [branch] [remote-branch]
+
+# 合并指定分支到当前分支
+$ git merge [branch]
+
+# 选择一个commit，合并进当前分支
+$ git cherry-pick [commit]
+
+# 删除分支
+$ git branch -d [branch-name]
+
+# 删除远程分支
+$ git push origin --delete [branch-name]
+$ git branch -dr [remote/branch]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8d08d3ad.js" defer></script><script src="/assets/js/2.3c5b5d5b.js" defer></script><script src="/assets/js/21.153d7d59.js" defer></script>
+  </body>
+</html>
